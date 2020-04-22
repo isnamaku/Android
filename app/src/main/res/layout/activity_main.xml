@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#9CFFEB3B"
+
+    android:backgroundTintMode="screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv_judul">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ITC Cafe"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:background="#C8B5CA"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_judul"
+        android:id="@+id/sc_menu"
+        android:layout_marginBottom="100dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3CA990AF"
+                android:padding="10dp"
+                android:layout_marginHorizontal="10dp"
+
+
+
+                >
+                <ImageView
+                    android:id="@+id/iv_a"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/a"
+                    android:scaleType="centerCrop"
+                    />
+                <TextView
+                    android:id="@+id/tv_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sop Buntut"
+                    android:minLines="2"
+                    android:maxLines="2"
+                    android:layout_toRightOf="@id/iv_a"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#111111"
+
+
+                    />
+                <TextView
+                    android:id="@+id/tv_desc_a"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:maxLines="6"
+                    android:minLines="4"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#111111"
+                    android:layout_below="@id/tv_a"
+                    android:layout_toRightOf="@id/iv_a"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Sop buntut terbuat dari potongan ekor sapi yang dibumbui kemudian dibakar atau digoreng dan dimasukkan ke dalam kuah kaldu."
+                    />
+                <TextView
+                    android:id="@+id/tv_harga_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 30.000"
+                    android:layout_below="@id/tv_desc_a"
+                    android:layout_alignParentRight="true"
+
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+
+
+                    />
+                <Button
+                    android:id="@+id/btn_tambah"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textSize="10sp"
+                    android:layout_below="@id/tv_harga_a"
+                    android:layout_toLeftOf="@id/tv_jumlah_a"
+                    />
+
+                <Button
+                    android:id="@+id/btn_kurang"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:layout_below="@id/tv_harga_a"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_jumlah_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_toLeftOf="@id/btn_kurang"
+                    android:layout_below="@id/tv_harga_a"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3CA990AF"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_d"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/d"
+                    android:scaleType="centerCrop"
+                    />
+                <TextView
+                    android:id="@+id/tv_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Cordon Bleu"
+                    android:minLines="2"
+                    android:maxLines="2"
+                    android:layout_toRightOf="@id/iv_d"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#111111"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_desc_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="6"
+                    android:minLines="4"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#111111"
+                    android:layout_below="@id/tv_d"
+                    android:layout_toRightOf="@id/iv_d"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Cordon bleu atau schnitzel cordon bleu adalah hidangan daging yang dililit keju, kemudian dilapisi tepung roti dan digoreng pan atau digoreng."
+                    />
+                <TextView
+                    android:id="@+id/tv_harga_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 45.000"
+                    android:layout_below="@id/tv_desc_d"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+
+
+                    />
+                <Button
+                    android:id="@+id/btn_tambah2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textSize="10sp"
+                    android:layout_below="@id/tv_harga_d"
+                    android:layout_toLeftOf="@id/tv_jumlah_d"
+                    />
+
+                <Button
+                    android:id="@+id/btn_kurang2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:layout_below="@id/tv_harga_d"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_jumlah_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_toLeftOf="@id/btn_kurang2"
+                    android:layout_below="@id/tv_harga_d"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#3CA990AF"
+                android:padding="10dp"
+                android:layout_marginHorizontal="10dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iv_e"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/e" />
+
+                <TextView
+                    android:id="@+id/tv_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toRightOf="@id/iv_e"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Ayam Geprek"
+                    android:textColor="#111111"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_desc_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_e"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_e"
+                    android:maxLines="6"
+                    android:minLines="4"
+                    android:text="Ayam geprek adalah makanan ayam goreng tepung khas Indonesia yang diulek atau dilumatkan bersama sambal bajak. "
+                    android:textColor="#111111" />
+
+                <TextView
+                    android:id="@+id/tv_harga_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_desc_e"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+
+                    android:text="Rp. 12.000"
+                    android:textSize="14sp"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_tambah3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_harga_e"
+                    android:layout_toLeftOf="@id/tv_jumlah_e"
+                    android:text="+"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btn_kurang3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_harga_e"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="-"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_jumlah_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_harga_e"
+                    android:layout_toLeftOf="@id/btn_kurang3"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/vw_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#D6B6C4"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Total : "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_total"
+                android:layout_alignParentTop="true"
+                android:text="Rp. 0"
+                android:textSize="18sp" />
+            <TextView
+               android:id="@+id/tv_status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Status : "
+                android:layout_toLeftOf="@id/tv_status"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="-"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="BUY"
+                android:layout_weight="1"
+                android:padding="10dp"
+                />
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="RESET"
+                android:layout_weight="1"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
